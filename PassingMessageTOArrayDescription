@@ -1,0 +1,11 @@
+#import <Foundation/Foundation.h>
+
+int main(int argc, const char* argv[]){
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+NSArray *names=@[@"komal",@"vimal",@"shamal"];
+NSString *res=[names description];
+NSLog(@"%@",res);
+   
+    [pool drain];
+    return 0;
+}
