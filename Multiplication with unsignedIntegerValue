@@ -1,0 +1,16 @@
+#import <Foundation/Foundation.h>
+
+int main(int argc, const char* argv[]){
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    NSNumber *a=@10;
+NSNumber *b=@20;
+NSUInteger ax=[a unsignedIntegerValue];
+NSUInteger bx=[b unsignedIntegerValue];
+
+NSUInteger res=ax * bx;
+
+NSLog(@"multiplication of %@ an %@ is %lu", a,b,res);
+
+    [pool drain];
+    return 0;
+}
