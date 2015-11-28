@@ -1,0 +1,13 @@
+#import <Foundation/Foundation.h>
+
+int main(int argc, const char* argv[]){
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    NSString *first = @"komal";
+NSString *last = @"kamble";
+
+NSString *fullName = [NSString stringWithFormat:@"%@ %@", first,last];
+
+NSLog(@"%@", fullName);
+
+    return 0;
+}
