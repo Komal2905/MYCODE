@@ -1,0 +1,16 @@
+#import <Foundation/Foundation.h>
+
+int main(int argc, const char* argv[]){
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+   void (^myFirstBlock)(NSString *) = ^(NSString *name){
+  NSLog(@"Hello from  %@", name);
+};
+
+myFirstBlock(@"komal");
+
+myFirstBlock(@"vimal");
+myFirstBlock(@"shamal");
+
+    [pool drain];
+    return 0;
+}
