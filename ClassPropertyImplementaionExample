@@ -1,0 +1,18 @@
+#import <Foundation/Foundation.h>
+ // #import "person.h"
+int main(int argc, const char* argv[]){
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+ 
+
+
+
+@implementation Person
+@end
+
+Person *s=[[Person allo] init];
+s.fName=@"komal";
+NSLog(@"%@", s.fName);
+
+    [pool drain];
+    return 0;
+}
